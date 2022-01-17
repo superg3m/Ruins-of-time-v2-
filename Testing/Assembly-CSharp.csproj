@@ -53,14 +53,15 @@
     <UnityVersion>2020.3.25f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\_Scripts\GUIManager\Inventory\Inventory.cs" />
+    <Compile Include="Assets\_Scripts\PlayerManager\PlayerLevelSystem\PlayerLeveling.cs" />
     <Compile Include="Assets\_Scripts\PlayerManager\PlayerMovement\RollCoolDown.cs" />
     <Compile Include="Assets\_Scripts\PlayerManager\PlayerMovement\PlayerMovement.cs" />
     <Compile Include="Assets\_Scripts\PlayerManager\PlayerMovement\PlayerInput.cs" />
-    <Compile Include="Assets\_Scripts\PlayerManager\PlayerMovement\PlayerCollision.cs" />
     <Compile Include="Assets\_Scripts\PlayerManager\PlayerLevelSystem\LevelSystem.cs" />
-    <Compile Include="Assets\_Scripts\PlayerManager\PlayerLevelSystem\PlayerLeveling.cs" />
-    <Compile Include="Assets\_Scripts\GUIManager\Inventory\Inventory.cs" />
+    <Compile Include="Assets\_Scripts\PlayerManager\PlayerMovement\PlayerCollision.cs" />
     <Compile Include="Assets\_Scripts\GUIManager\Inventory\Item.cs" />
+    <Compile Include="Assets\_Scripts\GUIManager\Inventory\UI_Inventory.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Resources\Cainos\Pixel Art Icon Pack - RPG\Shader\SH UI Icon Outline Color.shader" />
@@ -706,6 +707,12 @@
     <Reference Include="Unity.2D.IK.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>Library\ScriptAssemblies\Cinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.2D.Animation.Triangle.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
     </Reference>
@@ -732,12 +739,6 @@
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.cinemachine.editor">
-      <HintPath>Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Cinemachine">
-      <HintPath>Library\ScriptAssemblies\Cinemachine.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

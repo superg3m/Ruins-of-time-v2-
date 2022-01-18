@@ -55,13 +55,13 @@
   <ItemGroup>
     <Compile Include="Assets\_Scripts\GUIManager\Inventory\Inventory.cs" />
     <Compile Include="Assets\_Scripts\PlayerManager\PlayerLevelSystem\PlayerLeveling.cs" />
+    <Compile Include="Assets\_Scripts\GUIManager\Inventory\UI_Inventory.cs" />
     <Compile Include="Assets\_Scripts\PlayerManager\PlayerMovement\RollCoolDown.cs" />
     <Compile Include="Assets\_Scripts\PlayerManager\PlayerMovement\PlayerMovement.cs" />
     <Compile Include="Assets\_Scripts\PlayerManager\PlayerMovement\PlayerInput.cs" />
     <Compile Include="Assets\_Scripts\PlayerManager\PlayerLevelSystem\LevelSystem.cs" />
     <Compile Include="Assets\_Scripts\PlayerManager\PlayerMovement\PlayerCollision.cs" />
     <Compile Include="Assets\_Scripts\GUIManager\Inventory\Item.cs" />
-    <Compile Include="Assets\_Scripts\GUIManager\Inventory\UI_Inventory.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Resources\Cainos\Pixel Art Icon Pack - RPG\Shader\SH UI Icon Outline Color.shader" />

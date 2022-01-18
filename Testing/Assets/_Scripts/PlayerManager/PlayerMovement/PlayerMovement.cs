@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private UI_Inventory uiInventory;
     private Inventory inventory;
     private PlayerInput playerInput;
-    private Rigidbody2D rigidbody2D;
+    private new Rigidbody2D rigidbody2D;
     private RollCoolDown rollCooldown;
     public float _moveSpeed;
 

@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     private PlayerInput playerInput;
     private new Rigidbody2D rigidbody2D;
     private RollCoolDown rollCooldown;
+    public int dashDistance = 5;
     public float _moveSpeed;
 
     private void Awake()
@@ -31,13 +32,13 @@ public class PlayerMovement : MonoBehaviour
         if (playerInput.isRolling)
         {
             Debug.Log("working");
-            if (playerInput.key == KeyCode.W) transform.position += new Vector3(playerInput.movementX, 5, 0);
+            if (playerInput.key == KeyCode.W) transform.position += new Vector3(playerInput.movementX, dashDistance, 0);
 
-            else if (playerInput.key == KeyCode.A) transform.position += new Vector3(-5, playerInput.movementY, 0);
+            else if (playerInput.key == KeyCode.A) transform.position += new Vector3(-dashDistance, playerInput.movementY, 0);
 
-            else if (playerInput.key == KeyCode.S) transform.position += new Vector3(playerInput.movementX, -5, 0);
+            else if (playerInput.key == KeyCode.S) transform.position += new Vector3(playerInput.movementX, -dashDistance, 0);
 
-            else if (playerInput.key == KeyCode.D) transform.position += new Vector3(5, playerInput.movementY, 0);
+            else if (playerInput.key == KeyCode.D) transform.position += new Vector3(dashDistance, playerInput.movementY, 0);
         }
     }
 }

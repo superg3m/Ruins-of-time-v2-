@@ -8,7 +8,8 @@ public class PlayerInput : MonoBehaviour
     private KeyCode lastKey;
     public Vector2 movementInput { get; private set; }
     public KeyCode key { get; private set; }
-    public bool isRolling;
+    public bool inventoryIsOpen { get; private set; }
+    public bool isRolling { get; private set; }
     public float movementX;
     public float movementY;
 
@@ -51,6 +52,13 @@ public class PlayerInput : MonoBehaviour
         else
         {
             isRolling = false;
+        }
+        #endregion
+
+        #region Inventory
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            inventoryIsOpen = true;
         }
         #endregion
     }

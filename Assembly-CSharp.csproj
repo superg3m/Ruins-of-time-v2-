@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{36ED1CE3-772E-F3DE-3FE9-21977164E909}</ProjectGuid>
+    <ProjectGuid>{A513BC8D-6A7D-D6C5-EEBE-D27CF600D276}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -53,15 +53,16 @@
     <UnityVersion>2020.3.25f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\_Scripts\GUIManager\Inventory\Inventory.cs" />
     <Compile Include="Assets\_Scripts\PlayerManager\PlayerLevelSystem\PlayerLeveling.cs" />
-    <Compile Include="Assets\_Scripts\GUIManager\Inventory\UI_Inventory.cs" />
     <Compile Include="Assets\_Scripts\PlayerManager\PlayerMovement\RollCoolDown.cs" />
     <Compile Include="Assets\_Scripts\PlayerManager\PlayerMovement\PlayerMovement.cs" />
     <Compile Include="Assets\_Scripts\PlayerManager\PlayerMovement\PlayerInput.cs" />
     <Compile Include="Assets\_Scripts\PlayerManager\PlayerLevelSystem\LevelSystem.cs" />
     <Compile Include="Assets\_Scripts\PlayerManager\PlayerMovement\PlayerCollision.cs" />
     <Compile Include="Assets\_Scripts\GUIManager\Inventory\Item.cs" />
+    <Compile Include="Assets\_Scripts\GUIManager\Inventory\ItemTools.cs" />
+    <Compile Include="Assets\_Scripts\GUIManager\Inventory\ItemMiscellaneous.cs" />
+    <Compile Include="Assets\_Scripts\GUIManager\Inventory\ItemConsumables.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Resources\Cainos\Pixel Art Icon Pack - RPG\Shader\SH UI Icon Outline Color.shader" />

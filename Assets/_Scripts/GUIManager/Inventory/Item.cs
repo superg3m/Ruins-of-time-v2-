@@ -2,18 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Item
+public abstract class Item
 {
-    public ItemType itemType;
-    public int amount;
-    public enum ItemType
-    {
-        Sword,
-        HealthPotion,
-        ManaPotion,
-        Coin,
-        XPSword,
-    }
+    [Header("Item")]
+    public string itemType;
+    public Sprite itemIcon;
 
-    
+    public abstract Item GetItem();
+    public abstract ItemTools GetTool();
+    public abstract ItemMiscellaneous GetMisc();
+    public abstract ItemConsumables GetConsumable();
+
 }

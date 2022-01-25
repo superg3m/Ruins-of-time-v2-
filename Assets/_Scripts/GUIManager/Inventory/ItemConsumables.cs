@@ -2,17 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemConsumables : MonoBehaviour
+public class ItemConsumables : Item
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [Header("ItemConsumables")]
+    public float healthAdded;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public override Item GetItem() { return this; }
+    public override ItemTools GetTool() { return null; }
+    public override ItemMiscellaneous GetMisc() { return null; }
+    public override ItemConsumables GetConsumable() { return this; }
 }

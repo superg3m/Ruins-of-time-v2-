@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private UI_Inventory uiInventory;
-    private Inventory inventory;
     private PlayerInput playerInput;
     private new Rigidbody2D rigidbody2D;
     private RollCoolDown rollCooldown;
@@ -14,8 +12,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void Awake()
     {
-        inventory = new Inventory();
-        uiInventory.SetInventory(inventory);
         rollCooldown = GetComponent<RollCoolDown>();
         playerInput = GetComponent<PlayerInput>();
         rigidbody2D = GetComponent<Rigidbody2D>();

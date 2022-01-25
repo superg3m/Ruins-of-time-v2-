@@ -2,17 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemMiscellaneous : MonoBehaviour
+public class ItemMiscellaneous : Item
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    //[Header("ItemMiscellaneous")] // Data specific to miscellaneous items
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public override Item GetItem() { return this; }
+    public override ItemTools GetTool() { return null; }
+    public override ItemMiscellaneous GetMisc() { return this; }
+    public override ItemConsumables GetConsumable() { return null; }
 }

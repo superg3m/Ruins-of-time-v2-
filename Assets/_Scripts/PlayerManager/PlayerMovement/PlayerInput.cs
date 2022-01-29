@@ -5,11 +5,12 @@ using UnityEngine;
 public class PlayerInput : MonoBehaviour
 {
     [SerializeField] private RollCoolDown rollCooldown;
+    public GameObject inventoryPanel;
     private KeyCode lastKey;
     public Vector2 movementInput { get; private set; }
     public KeyCode key { get; private set; }
-    public bool inventoryIsOpen { get; private set; }
-    public bool isRolling { get; private set; }
+    public bool inventoryIsOpen;
+    public bool isRolling;
     public float movementX;
     public float movementY;
 
@@ -56,10 +57,30 @@ public class PlayerInput : MonoBehaviour
         #endregion
 
         #region Inventory
-        if (Input.GetKeyDown(KeyCode.I))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            inventoryIsOpen = true;
-        }
+            if (!inventoryIsOpen)
+            {
+                
+                Debug.Log("opening");
+                OpenInventory();
+            }
+            else if (inventoryIsOpen)
+            {
+                Debug.Log("closing");
+                CloseInventory();
+            }
+        }  
         #endregion
+    }
+    public void OpenInventory()
+    {
+        inventoryIsOpen = true;
+        inventoryPanel.SetActive(true);
+    }
+    public void CloseInventory()
+    {
+        inventoryIsOpen = false;
+        inventoryPanel.SetActive(false);
     }
 }

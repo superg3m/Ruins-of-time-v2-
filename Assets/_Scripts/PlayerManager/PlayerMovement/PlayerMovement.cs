@@ -21,9 +21,13 @@ public class PlayerMovement : MonoBehaviour
     {
         rigidbody2D.velocity = new Vector2(playerInput.movementInput.x * _moveSpeed, playerInput.movementInput.y * _moveSpeed);
         // Checks what the player's last directional key was and sets dash respectively
-        
+
     }
     private void Update()
+    {
+        Rolling();
+    }
+    private void Rolling()
     {
         if (playerInput.isRolling)
         {

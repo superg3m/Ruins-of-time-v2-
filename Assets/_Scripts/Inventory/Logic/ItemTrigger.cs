@@ -21,6 +21,6 @@ public class ItemTrigger : MonoBehaviour
     }
     private void OnApplicationQuit()
     {
-        //inventory.Container.Clear();
+        inventory.Container.Clear();
     }
 }

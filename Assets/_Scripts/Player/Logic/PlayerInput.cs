@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class PlayerInput : MonoBehaviour
 {
-    [SerializeField] private RollCoolDown rollCooldown;
+    private RollCoolDown rollCooldown;
+    private HealthSystem healthSystem;
     public GameObject inventoryPanel;
     private KeyCode lastKey;
     public Vector2 movementInput { get; private set; }
@@ -21,6 +22,7 @@ public class PlayerInput : MonoBehaviour
     private void Awake()
     {
         rollCooldown = GetComponent<RollCoolDown>();
+        healthSystem = GetComponent<HealthSystem>();
     }
 
     private void InputProcessing()
@@ -70,7 +72,14 @@ public class PlayerInput : MonoBehaviour
                 Debug.Log("closing");
                 CloseInventory();
             }
-        }  
+        }
+        #endregion
+
+        #region Test
+        if(Input.GetKeyDown(KeyCode.K))
+        {
+            healthSystem.RemoveHealth(10f);
+        }
         #endregion
     }
     public void OpenInventory()

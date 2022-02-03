@@ -10,6 +10,7 @@ public class RollCoolDown : MonoBehaviour
     private void Update()
     {
         if (rollCooldownTimer > 0) rollCooldownTimer -= Time.deltaTime;
+        else if (rollCooldownTimer < 0) rollCooldownTimer = 0;
         else 
         {
             onCooldown = false;

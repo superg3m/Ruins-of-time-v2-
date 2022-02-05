@@ -78,6 +78,10 @@ public class PlayerInput : MonoBehaviour
         #region Test
         if(Input.GetKeyDown(KeyCode.K))
         {
+            healthSystem.AddHealth(10f);
+        }
+        if (Input.GetKeyDown(KeyCode.J))
+        {
             healthSystem.RemoveHealth(10f);
         }
         #endregion

@@ -36,11 +36,15 @@ public class HealthSystem : MonoBehaviour
     }
     public void RemoveHealth(float damage)
     {
-        currentHealth -= damage;
-        lastHitTimer = lastHitTime;
+        if((currentHealth - damage) >= 0)
+        {
+            currentHealth -= damage;
+            lastHitTimer = lastHitTime;
+        }
     }
     public void AddHealth(float amount)
     {
         if ((currentHealth + amount) <= maxHealth) currentHealth += amount;
+        else if ((currentHealth + amount) > maxHealth)  currentHealth = maxHealth;
     }
 }

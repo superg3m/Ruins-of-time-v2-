@@ -22,11 +22,11 @@ public class PlayerMovement : MonoBehaviour
         rigidbody2D.velocity = new Vector2(playerInput.movementInput.x * _moveSpeed, playerInput.movementInput.y * _moveSpeed);
         if (rigidbody2D.velocity.x < 0f)
         {
-            transform.localScale = new Vector2(-5, 5);
+            transform.localScale = new Vector2(-2, 2);
         }
         else if (rigidbody2D.velocity.x > 0f)
         {
-            transform.localScale = new Vector2(5, 5);
+            transform.localScale = new Vector2(2, 2);
         }
 
         // Checks what the player's last directional key was and sets dash respectively

@@ -14,7 +14,7 @@ public class ItemTrigger : MonoBehaviour
             inventory.AddItem(item.item, 1);
             Destroy(other.gameObject);
         }
-        else
+        else if(item && inventory.Container.Count > 56)
         {
             Debug.Log("You are carrying to much!");
         }

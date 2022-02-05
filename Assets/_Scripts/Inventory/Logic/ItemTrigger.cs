@@ -10,12 +10,12 @@ public class ItemTrigger : MonoBehaviour
     {
         var item = GetComponent<Item>();
         player = GameObject.Find("PlayerSprite");
-        if (player != null && inventory.Container.Count < 56)
+        if (other.gameObject == player && inventory.Container.Count < 56)
         {
             inventory.AddItem(item.item, 1);
             Destroy(gameObject);
         }
-        else if(player != null && inventory.Container.Count > 56)
+        else if(other.gameObject == player && inventory.Container.Count >= 56)
         {
             Debug.Log("You are carrying to much!");
         }

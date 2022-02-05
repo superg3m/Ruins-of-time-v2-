@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     private PlayerInput playerInput;
+    public InventoryObject inventory;
     private new Rigidbody2D rigidbody2D;
     private Animator animator;
     public int dashDistance = 5;
@@ -39,7 +40,6 @@ public class PlayerMovement : MonoBehaviour
     {
         if (playerInput.isRolling)
         {
-            Debug.Log("working");
             if (playerInput.key == KeyCode.W) transform.position += new Vector3(playerInput.movementX, dashDistance, 0);
 
             else if (playerInput.key == KeyCode.A) transform.position += new Vector3(-dashDistance, playerInput.movementY, 0);
@@ -48,5 +48,9 @@ public class PlayerMovement : MonoBehaviour
 
             else if (playerInput.key == KeyCode.D) transform.position += new Vector3(dashDistance, playerInput.movementY, 0);
         }
+    }
+    private void OnApplicationQuit()
+    {
+        inventory.Container.Clear();
     }
 }

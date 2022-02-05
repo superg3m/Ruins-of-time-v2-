@@ -5,22 +5,19 @@ using UnityEngine;
 public class ItemTrigger : MonoBehaviour
 {
     public InventoryObject inventory;
-    public PlayerInput playerInput;
+    private GameObject player;
     public void OnTriggerEnter2D(Collider2D other)
     {
-        var item = other.GetComponent<Item>();
-        if (item && inventory.Container.Count < 56)
+        var item = GetComponent<Item>();
+        player = GameObject.Find("PlayerSprite");
+        if (player != null && inventory.Container.Count < 56)
         {
             inventory.AddItem(item.item, 1);
-            Destroy(other.gameObject);
+            Destroy(gameObject);
         }
-        else if(item && inventory.Container.Count > 56)
+        else if(player != null && inventory.Container.Count > 56)
         {
             Debug.Log("You are carrying to much!");
         }
-    }
-    private void OnApplicationQuit()
-    {
-        inventory.Container.Clear();
     }
 }

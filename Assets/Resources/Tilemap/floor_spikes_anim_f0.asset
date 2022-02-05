@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: floor_spikes_anim_f0
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 21300000, guid: 88248093dbb8a1c4fb38b689701a96c6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 944d1ae387da51d42b54084399f11134, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

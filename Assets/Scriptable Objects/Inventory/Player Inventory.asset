@@ -12,4 +12,104 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eff1aff092238914a90563329203d3ea, type: 3}
   m_Name: Player Inventory
   m_EditorClassIdentifier: 
-  Container: []
+  Container:
+  - item: {fileID: 11400000, guid: 4622016ab3c23344ea79641c36e55a02, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: 4622016ab3c23344ea79641c36e55a02, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: 4622016ab3c23344ea79641c36e55a02, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: 4622016ab3c23344ea79641c36e55a02, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: 4622016ab3c23344ea79641c36e55a02, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: 4622016ab3c23344ea79641c36e55a02, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: 4622016ab3c23344ea79641c36e55a02, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: 4622016ab3c23344ea79641c36e55a02, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: 4622016ab3c23344ea79641c36e55a02, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: 4622016ab3c23344ea79641c36e55a02, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: 4622016ab3c23344ea79641c36e55a02, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: 4622016ab3c23344ea79641c36e55a02, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: 4622016ab3c23344ea79641c36e55a02, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: 4622016ab3c23344ea79641c36e55a02, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: 4622016ab3c23344ea79641c36e55a02, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: 4622016ab3c23344ea79641c36e55a02, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: 4622016ab3c23344ea79641c36e55a02, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: 4622016ab3c23344ea79641c36e55a02, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: 4622016ab3c23344ea79641c36e55a02, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: 4622016ab3c23344ea79641c36e55a02, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: 4622016ab3c23344ea79641c36e55a02, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: 4622016ab3c23344ea79641c36e55a02, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: 4622016ab3c23344ea79641c36e55a02, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: 4622016ab3c23344ea79641c36e55a02, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: 4622016ab3c23344ea79641c36e55a02, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: 4622016ab3c23344ea79641c36e55a02, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: 4622016ab3c23344ea79641c36e55a02, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: 4622016ab3c23344ea79641c36e55a02, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: 4622016ab3c23344ea79641c36e55a02, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: 4622016ab3c23344ea79641c36e55a02, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: 4622016ab3c23344ea79641c36e55a02, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: 4622016ab3c23344ea79641c36e55a02, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: 4622016ab3c23344ea79641c36e55a02, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: 4622016ab3c23344ea79641c36e55a02, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: 4622016ab3c23344ea79641c36e55a02, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: 4622016ab3c23344ea79641c36e55a02, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: 4622016ab3c23344ea79641c36e55a02, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: 4622016ab3c23344ea79641c36e55a02, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: 4622016ab3c23344ea79641c36e55a02, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: 4622016ab3c23344ea79641c36e55a02, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: 4622016ab3c23344ea79641c36e55a02, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: 4622016ab3c23344ea79641c36e55a02, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: 4622016ab3c23344ea79641c36e55a02, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: 4622016ab3c23344ea79641c36e55a02, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: 4622016ab3c23344ea79641c36e55a02, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: 4622016ab3c23344ea79641c36e55a02, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: 4622016ab3c23344ea79641c36e55a02, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: 4622016ab3c23344ea79641c36e55a02, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: 4622016ab3c23344ea79641c36e55a02, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: 4622016ab3c23344ea79641c36e55a02, type: 2}
+    amount: 1
